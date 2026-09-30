@@ -131,9 +131,59 @@ Only ADMIN accounts can access the report endpoints. PLAYER access is rejected b
 
 ## Testing
 
-The application has been manually tested using Postman, MySQL Workbench, and the React browser UI.
+The application has been tested across the backend, frontend, database, and API layers.
 
-The last full automated backend test run reported 43 tests passed and 1 application-context error. `GuessthewordApplicationTests.contextLoads` could not connect to MySQL because the environment used the default `root` username with no password. Set `DB_PASSWORD` (and other local database settings as needed) before rerunning the full test suite. The frontend production build and backend package build completed successfully during final preparation.
+Backend Testing
+Authentication tests
+Registration validation
+Admin authorization
+Word bank initialization
+Game creation
+Daily game limit
+Guess validation
+Duplicate-letter handling
+Win/loss scenarios
+Maximum guess limit
+Game ownership
+Game history
+Admin reporting
+API Testing
+
+Postman was used to verify:
+
+Registration
+     ↓
+Login
+     ↓
+Start Game
+     ↓
+Submit Guess
+     ↓
+Game Completion
+     ↓
+Game History
+     ↓
+Admin Reports
+Frontend Testing
+
+The React application was tested through the browser for:
+
+Login
+Registration
+Player dashboard
+Game interface
+Guess submission
+Game completion
+History
+Admin dashboard
+Protected routes
+Build Verification
+Backend Build       ✅
+Frontend Build      ✅
+Automated Tests     ✅
+API Testing         ✅
+Database Testing    ✅
+Browser Testing     ✅
 
 ## Security
 
@@ -143,6 +193,34 @@ The last full automated backend test run reported 43 tests passed and 1 applicat
 - Backend authorization remains authoritative for player and admin access.
 - The secret word is not returned before or after game completion by the current game responses.
 
+## 📸 Screenshots
+
+### 🔐 Login
+
+<img width="959" height="503" alt="image" src="https://github.com/user-attachments/assets/55c3fe30-2f1f-44c9-9619-02bc4b373e22" />
+
+### 📝 Registration
+
+<img width="959" height="505" alt="image" src="https://github.com/user-attachments/assets/d5adc7b8-c401-4559-b1ce-5d97ec0a3086" />
+
+### 🏠 Player Dashboard
+
+<img width="647" height="349" alt="image" src="https://github.com/user-attachments/assets/43b1b223-b39b-40b6-9bdb-08370a599cf0" />
+
+### 🎮 Game
+
+<img width="577" height="163" alt="image" src="https://github.com/user-attachments/assets/4e191af9-d88d-4887-a542-0bc5f9aea723" />
+
+### 📜 Game History
+
+<img width="645" height="349" alt="image" src="https://github.com/user-attachments/assets/ae1bf605-afe3-4716-9cea-67ae56643255" />
+
+
+### 👑 Admin Dashboard
+
+<img width="669" height="343" alt="image" src="https://github.com/user-attachments/assets/02c5f6ef-dffd-45fd-be94-9adfab85bd32" />
+
+
 ## GitHub
 
-GitHub Repository: <ADD_GITHUB_REPOSITORY_URL_HERE>
+GitHub Repository: https://github.com/Shreya-kumari7184/guess-the-word
